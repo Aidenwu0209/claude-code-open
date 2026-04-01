@@ -1,66 +1,123 @@
-# Claude Code Fusion
+# Claude Code Open
 
-<p align="right"><strong>中文</strong> | <a href="./README.en.md">English</a></p>
+<p align="center">
+  <strong>一个可本地运行、可继续开发、带完整工程结构与文档资源的 Claude Code 工作区。</strong>
+</p>
 
-![Fusion Hero](docs/fusion-assets/hero-fusion.svg)
+<p align="center">
+  <a href="./README.en.md">English</a> ·
+  <a href="./docs/fusion-notes.md">融合说明</a> ·
+  <a href="./docs/introduction/architecture-overview.mdx">架构概览</a>
+</p>
 
-这个仓库是一个统一整理后的 Claude Code 工作区，已经把核心工程结构、本地启动入口和新的仓库视觉资源整合到同一套目录中。当前策略是：
+<p align="center">
+  <img src="./docs/fusion-assets/hero-fusion.svg" alt="Claude Code Open Hero" width="960" />
+</p>
 
-- 默认开发、构建和主 CLI 行为保持统一主链路
-- 保留一个可选的本地启动与恢复入口，方便快速调试
-- 重写首页视觉，使用全新的 SVG 图片资源作为仓库展示图
+## 项目定位
 
-详细融合边界见：[docs/fusion-notes.md](docs/fusion-notes.md)
+这个仓库不是只做一个能启动的壳子，也不是只保留文档站结构，而是把两种路线的优点整合到了一起：
 
-## 这次融合了什么
+- 保留完整的 `src/`、`packages/`、`scripts/`、`docs/` 工程布局
+- 保留面向本地使用的启动入口、恢复模式和环境模板
+- 保留终端交互、命令系统、工具系统、MCP、插件与 Skills 能力
+- 重做仓库门面图片与首页编排，让 GitHub 首页更适合直接公开展示
 
-![Feature Map](docs/fusion-assets/feature-map.svg)
+## 你可以得到什么
 
-代码层：
+- 完整 CLI / Ink TUI 交互界面
+- `--print` 非交互输出模式
+- 本地启动脚本 `./bin/claude-local`
+- Recovery CLI 降级模式
+- 自定义 API 端点与模型配置
+- MCP / 插件 / Skills / 命令系统
+- 文档目录、架构图、运行截图和工程脚本
 
-- 整合了完整的 `src/`、`packages/`、`scripts/`、`docs/` 工程体系
-- 保留 `bin/claude-local`、`src/localRecoveryCli.ts`、`preload.ts`、`.env.example` 作为本地启动附加层
-- 默认开发入口仍然走 `bun run dev`
-- 合入修饰键检测的容错修复
+## 界面预览
 
-资源层：
+<p align="center">
+  <img src="./docs/runtime-snapshots/00runtime.png" alt="Runtime Preview" width="31%" />
+  <img src="./docs/runtime-snapshots/05-terminal-ui.png" alt="Terminal UI" width="31%" />
+  <img src="./docs/runtime-snapshots/04-multi-agent.png" alt="Multi Agent" width="31%" />
+</p>
 
-- 保留文档站结构
-- 补充运行截图到 [`docs/runtime-snapshots/`](docs/runtime-snapshots)
-- 新增全新的融合版 SVG 视觉资源到 [`docs/fusion-assets/`](docs/fusion-assets)
+<p align="center">
+  <img src="./docs/runtime-snapshots/06-permission-security.png" alt="Permission Security" width="31%" />
+  <img src="./docs/runtime-snapshots/03-tool-system.png" alt="Tool System" width="31%" />
+  <img src="./docs/runtime-snapshots/07-services-layer.png" alt="Services Layer" width="31%" />
+</p>
+
+## 架构与能力
+
+<p align="center">
+  <img src="./docs/fusion-assets/feature-map.svg" alt="Feature Map" width="920" />
+</p>
+
+这套仓库现在更接近“可继续维护的工程版 + 好上手的本地版”组合：
+
+- 默认主链路走 `bun run dev` / `bun run start`
+- 本地附加入口走 `./bin/claude-local`
+- 出现启动或界面问题时，可直接切换到 Recovery CLI
+- 文档与截图资源保留在仓库内，便于后续继续整理公开页面
 
 ## 快速开始
 
-### 1. 安装依赖
+### 1. 安装 Bun
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+bun --version
+```
+
+### 2. 安装依赖
 
 ```bash
 bun install
 ```
 
-### 2. 配置环境变量
+### 3. 配置环境变量
 
 ```bash
 cp .env.example .env
 ```
 
-### 3. 运行
+常用变量：
 
-完整 CLI：
+```env
+ANTHROPIC_API_KEY=sk-xxx
+ANTHROPIC_BASE_URL=https://api.anthropic.com
+ANTHROPIC_MODEL=claude-sonnet-4-5
+ANTHROPIC_DEFAULT_SONNET_MODEL=claude-sonnet-4-5
+ANTHROPIC_DEFAULT_HAIKU_MODEL=claude-3-5-haiku-latest
+API_TIMEOUT_MS=600000
+DISABLE_TELEMETRY=1
+CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
+```
+
+### 4. 启动
+
+完整 TUI：
 
 ```bash
 bun run dev
 ```
 
-默认启动脚本：
+默认 CLI 入口：
 
 ```bash
 bun run start
 ```
 
-可选的本地启动脚本：
+本地附加入口：
 
 ```bash
 ./bin/claude-local
+```
+
+单次输出模式：
+
+```bash
+./bin/claude-local -p "explain this repository"
 ```
 
 恢复模式：
@@ -69,45 +126,47 @@ bun run start
 CLAUDE_CODE_FORCE_RECOVERY_CLI=1 ./bin/claude-local
 ```
 
-## 目录重点
+## 常用命令
 
-```text
-bin/                    # 本地运行入口
-docs/                   # 文档与展示资源
-docs/fusion-assets/     # 新重置的融合视觉图
-docs/runtime-snapshots/ # 运行截图
-packages/               # workspace 内部包
-scripts/                # 工程脚本
-src/                    # 主代码区
-preload.ts              # 仅供本地附加启动脚本使用
+```bash
+bun run dev
+bun run start
+bun run build
+bun run health
+./bin/claude-local --help
+CLAUDE_CODE_FORCE_RECOVERY_CLI=1 ./bin/claude-local --help
 ```
 
-## 融合说明
+## 目录结构
 
-这不是“谁覆盖谁”的简单拷贝，而是按下面的原则处理：
+```text
+bin/                    # 本地启动入口
+docs/                   # 文档、架构说明、图片资源
+docs/fusion-assets/     # 首页 SVG 视觉资源
+docs/runtime-snapshots/ # 运行截图
+packages/               # workspace 内部包
+scripts/                # 构建与维护脚本
+src/                    # 主代码区
+preload.ts              # 本地启动预加载
+```
 
-1. 主 CLI、构建和文档链路保持统一
-2. 本地启动与恢复能力作为附加层保留
-3. 仓库门面和图片重新设计，避免首页继续沿用旧图
+## 推荐阅读
 
-## 图片
+- [docs/fusion-notes.md](./docs/fusion-notes.md)
+- [docs/introduction/architecture-overview.mdx](./docs/introduction/architecture-overview.mdx)
+- [docs/conversation/the-loop.mdx](./docs/conversation/the-loop.mdx)
+- [docs/tools/what-are-tools.mdx](./docs/tools/what-are-tools.mdx)
+- [docs/safety/permission-model.mdx](./docs/safety/permission-model.mdx)
 
-新的首页图：
+## 路线图
 
-- [hero-fusion.svg](docs/fusion-assets/hero-fusion.svg)
-- [feature-map.svg](docs/fusion-assets/feature-map.svg)
-- [roadmap.svg](docs/fusion-assets/roadmap.svg)
+<p align="center">
+  <img src="./docs/fusion-assets/roadmap.svg" alt="Roadmap" width="920" />
+</p>
 
-补充的运行截图：
+后续更适合继续推进这些方向：
 
-- [00runtime.png](docs/runtime-snapshots/00runtime.png)
-- [01-overall-architecture.png](docs/runtime-snapshots/01-overall-architecture.png)
-- [02-request-lifecycle.png](docs/runtime-snapshots/02-request-lifecycle.png)
-- [03-tool-system.png](docs/runtime-snapshots/03-tool-system.png)
-- [04-multi-agent.png](docs/runtime-snapshots/04-multi-agent.png)
-- [05-terminal-ui.png](docs/runtime-snapshots/05-terminal-ui.png)
-- [06-permission-security.png](docs/runtime-snapshots/06-permission-security.png)
-- [07-services-layer.png](docs/runtime-snapshots/07-services-layer.png)
-- [08-state-data-flow.png](docs/runtime-snapshots/08-state-data-flow.png)
-
-![Roadmap](docs/fusion-assets/roadmap.svg)
+- 继续清理公开仓库门面与说明文案
+- 继续吸收稳定性修复并补更多验证
+- 继续整理 docs 站点内容与结构
+- 继续优化本地启动、恢复模式与跨平台体验
