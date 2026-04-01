@@ -16,7 +16,12 @@
 
   <rect x="92" y="210" width="1256" height="160" rx="28" fill="url(#accent)"/>
   <text x="132" y="274" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">1. Entry + Session Layer</text>
-  <text x="132" y="322" fill="#F1D8AF" font-family="Arial, Helvetica, sans-serif" font-size="23">`bun run dev`, `bun run start`, `./bin/claude-local`, recovery mode, print mode</text>
+  <rect x="132" y="296" width="170" height="34" rx="17" fill="#2C5F75"/>
+  <text x="169" y="319" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">bun run dev</text>
+  <rect x="316" y="296" width="178" height="34" rx="17" fill="#D97D47"/>
+  <text x="351" y="319" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">bun run start</text>
+  <rect x="508" y="296" width="206" height="34" rx="17" fill="#2C5F75"/>
+  <text x="542" y="319" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">./bin/claude-local</text>
   <rect x="1068" y="250" width="220" height="80" rx="22" fill="#D97D47"/>
   <text x="1114" y="300" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">CLI / TUI</text>
 
@@ -49,7 +54,7 @@
   <rect x="132" y="806" width="186" height="34" rx="17" fill="#D97D47"/>
   <text x="183" y="829" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">README</text>
   <rect x="336" y="806" width="222" height="34" rx="17" fill="#295E72"/>
-  <text x="401" y="829" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">SVG ASSETS</text>
+  <text x="387" y="829" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">IMAGE ASSETS</text>
   <rect x="576" y="806" width="180" height="34" rx="17" fill="#D97D47"/>
   <text x="625" y="829" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">DOCS</text>
   <rect x="774" y="806" width="266" height="34" rx="17" fill="#295E72"/>

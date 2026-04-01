@@ -17,7 +17,7 @@
     <circle cx="520" cy="402" r="44" fill="#E07F49"/>
     <rect x="404" y="452" width="232" height="148" rx="24" fill="#FFF8EE"/>
     <text x="438" y="506" fill="#162B39" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">2. Configure</text>
-    <text x="438" y="548" fill="#496271" font-family="Arial, Helvetica, sans-serif" font-size="21">prepare `.env`, provider</text>
+    <text x="438" y="548" fill="#496271" font-family="Arial, Helvetica, sans-serif" font-size="21">prepare env settings,</text>
     <text x="438" y="578" fill="#496271" font-family="Arial, Helvetica, sans-serif" font-size="21">settings, and defaults</text>
   </g>
 
