@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="./docs/fusion-assets/hero-fusion.svg" alt="Claude Code Open Hero" width="960" />
+  <img src="./docs/fusion-assets/hero-fusion.png" alt="Claude Code Open Hero" width="960" />
 </p>
 
 ## Overview
@@ -35,10 +35,10 @@ This repository combines the strengths of a runnable local setup and a larger en
 ## Preview
 
 <p align="center">
-  <img src="./docs/fusion-assets/preview-wall.svg" alt="Preview Wall" width="980" />
+  <img src="./docs/fusion-assets/preview-wall.png" alt="Preview Wall" width="980" />
 </p>
 
-Full-size reference screenshots are still available in [`docs/runtime-snapshots/`](./docs/runtime-snapshots/), but the README now uses a single consistent preview board for cleaner GitHub rendering.
+Full-size reference screenshots are still available in [`docs/runtime-snapshots/`](./docs/runtime-snapshots/), and `docs/fusion-assets/` keeps both PNG display assets and SVG source files.
 
 ## Quick Start
 
