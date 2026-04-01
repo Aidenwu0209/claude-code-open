@@ -1,0 +1,54 @@
+<svg width="1440" height="860" viewBox="0 0 1440 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFF8EF"/>
+      <stop offset="1" stop-color="#F6E5CE"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1440" height="860" rx="34" fill="#132A38"/>
+  <text x="92" y="110" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">Launch Path</text>
+  <text x="92" y="154" fill="#E8C99B" font-family="Arial, Helvetica, sans-serif" font-size="24">A simpler path card set with short labels and generous spacing.</text>
+
+  <g transform="translate(92 226)">
+    <g transform="translate(0 0)">
+      <rect width="596" height="214" rx="30" fill="url(#card)"/>
+      <circle cx="72" cy="74" r="34" fill="#E07F49"/>
+      <text x="60" y="86" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">1</text>
+      <text x="124" y="82" fill="#162B39" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">Install</text>
+      <text x="124" y="128" fill="#496271" font-family="Arial, Helvetica, sans-serif" font-size="24">Set up Bun and install dependencies.</text>
+      <text x="124" y="162" fill="#496271" font-family="Arial, Helvetica, sans-serif" font-size="24">Check the main entrypoints.</text>
+      <rect x="124" y="180" width="176" height="16" rx="8" fill="#2D6278"/>
+    </g>
+
+    <g transform="translate(660 0)">
+      <rect width="596" height="214" rx="30" fill="url(#card)"/>
+      <circle cx="72" cy="74" r="34" fill="#E07F49"/>
+      <text x="60" y="86" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">2</text>
+      <text x="124" y="82" fill="#162B39" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">Configure</text>
+      <text x="124" y="128" fill="#496271" font-family="Arial, Helvetica, sans-serif" font-size="24">Prepare env defaults and local settings.</text>
+      <text x="124" y="162" fill="#496271" font-family="Arial, Helvetica, sans-serif" font-size="24">Confirm launcher behavior.</text>
+      <rect x="124" y="180" width="214" height="16" rx="8" fill="#D97D47"/>
+    </g>
+
+    <g transform="translate(0 272)">
+      <rect width="596" height="214" rx="30" fill="url(#card)"/>
+      <circle cx="72" cy="74" r="34" fill="#E07F49"/>
+      <text x="60" y="86" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">3</text>
+      <text x="124" y="82" fill="#162B39" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">Run</text>
+      <text x="124" y="128" fill="#496271" font-family="Arial, Helvetica, sans-serif" font-size="24">Test the CLI, local launcher,</text>
+      <text x="124" y="162" fill="#496271" font-family="Arial, Helvetica, sans-serif" font-size="24">and recovery mode together.</text>
+      <rect x="124" y="180" width="186" height="16" rx="8" fill="#2D6278"/>
+    </g>
+
+    <g transform="translate(660 272)">
+      <rect width="596" height="214" rx="30" fill="url(#card)"/>
+      <circle cx="72" cy="74" r="34" fill="#E07F49"/>
+      <text x="60" y="86" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">4</text>
+      <text x="124" y="82" fill="#162B39" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">Polish</text>
+      <text x="124" y="128" fill="#496271" font-family="Arial, Helvetica, sans-serif" font-size="24">Tighten README visuals and docs.</text>
+      <text x="124" y="162" fill="#496271" font-family="Arial, Helvetica, sans-serif" font-size="24">Keep public pages easy to scan.</text>
+      <rect x="124" y="180" width="228" height="16" rx="8" fill="#D97D47"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,92 @@
+<svg width="1600" height="920" viewBox="0 0 1600 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="40" y1="30" x2="1540" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9F2"/>
+      <stop offset="0.56" stop-color="#F3D7AF"/>
+      <stop offset="1" stop-color="#163B4F"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFDF9"/>
+      <stop offset="1" stop-color="#F6E8D2"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1C4054"/>
+      <stop offset="1" stop-color="#102633"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="920" rx="36" fill="url(#bg)"/>
+  <circle cx="1360" cy="160" r="160" fill="#FFF9F2" fill-opacity="0.28"/>
+  <circle cx="1404" cy="780" r="280" fill="#103246" fill-opacity="0.15"/>
+  <circle cx="248" cy="786" r="216" fill="#FFF7EC" fill-opacity="0.22"/>
+
+  <g opacity="0.12" stroke="#2D5365">
+    <path d="M86 176H716"/>
+    <path d="M86 228H716"/>
+    <path d="M86 280H716"/>
+    <path d="M86 332H716"/>
+  </g>
+
+  <rect x="92" y="92" width="334" height="56" rx="28" fill="#132C3A"/>
+  <text x="126" y="128" fill="#FFF8EE" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Local-first workspace</text>
+
+  <text x="92" y="276" fill="#122B39" font-family="Arial, Helvetica, sans-serif" font-size="108" font-weight="800">Claude</text>
+  <text x="92" y="374" fill="#122B39" font-family="Arial, Helvetica, sans-serif" font-size="108" font-weight="800">Code Open</text>
+
+  <text x="98" y="448" fill="#214457" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">Local tools, docs, and launch paths in one repo.</text>
+
+  <rect x="94" y="506" width="214" height="58" rx="29" fill="#173A4A"/>
+  <text x="145" y="544" fill="#FFF8EE" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">CLI + TUI</text>
+  <rect x="326" y="506" width="240" height="58" rx="29" fill="#D97D47"/>
+  <text x="370" y="544" fill="#FFF8EE" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Local launcher</text>
+  <rect x="584" y="506" width="252" height="58" rx="29" fill="#295E72"/>
+  <text x="634" y="544" fill="#FFF8EE" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">Recovery mode</text>
+
+  <rect x="92" y="624" width="720" height="180" rx="30" fill="url(#panel)"/>
+  <text x="136" y="688" fill="#FFF8EE" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">What this repository keeps together</text>
+  <text x="136" y="734" fill="#F2D5AA" font-family="Arial, Helvetica, sans-serif" font-size="24">Bun workspace</text>
+  <text x="366" y="734" fill="#F2D5AA" font-family="Arial, Helvetica, sans-serif" font-size="24">commands + tools</text>
+  <text x="642" y="734" fill="#F2D5AA" font-family="Arial, Helvetica, sans-serif" font-size="24">docs + assets</text>
+  <rect x="136" y="752" width="174" height="18" rx="9" fill="#D97D47"/>
+  <rect x="366" y="752" width="214" height="18" rx="9" fill="#2C5F75"/>
+  <rect x="642" y="752" width="134" height="18" rx="9" fill="#D97D47"/>
+
+  <g transform="translate(920 116)">
+    <rect width="572" height="676" rx="34" fill="#173549" fill-opacity="0.18"/>
+
+    <rect x="28" y="30" width="516" height="146" rx="28" fill="url(#card)"/>
+    <rect x="60" y="58" width="86" height="86" rx="24" fill="#1F566D"/>
+    <rect x="82" y="82" width="42" height="12" rx="6" fill="#FFF8EE"/>
+    <rect x="82" y="104" width="42" height="12" rx="6" fill="#FFF8EE"/>
+    <rect x="82" y="126" width="30" height="12" rx="6" fill="#FFF8EE"/>
+    <text x="182" y="90" fill="#143042" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">CLI + TUI</text>
+    <text x="182" y="132" fill="#4B6675" font-family="Arial, Helvetica, sans-serif" font-size="24">interactive sessions</text>
+
+    <rect x="28" y="208" width="244" height="172" rx="26" fill="url(#card)"/>
+    <rect x="300" y="208" width="244" height="172" rx="26" fill="url(#card)"/>
+
+    <rect x="60" y="244" width="64" height="64" rx="18" fill="#295E72"/>
+    <path d="M80 276H104" stroke="#FFF8EE" stroke-width="8" stroke-linecap="round"/>
+    <path d="M92 264V288" stroke="#FFF8EE" stroke-width="8" stroke-linecap="round"/>
+    <text x="148" y="274" fill="#143042" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">Launcher</text>
+    <text x="148" y="316" fill="#4B6675" font-family="Arial, Helvetica, sans-serif" font-size="22">local entry</text>
+
+    <rect x="332" y="244" width="64" height="64" rx="18" fill="#D97D47"/>
+    <path d="M352 276H376" stroke="#FFF8EE" stroke-width="8" stroke-linecap="round"/>
+    <path d="M364 264V288" stroke="#FFF8EE" stroke-width="8" stroke-linecap="round"/>
+    <text x="420" y="274" fill="#143042" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">Recovery</text>
+    <text x="420" y="316" fill="#4B6675" font-family="Arial, Helvetica, sans-serif" font-size="22">safe fallback</text>
+
+    <rect x="28" y="414" width="516" height="194" rx="28" fill="url(#panel)"/>
+    <text x="62" y="476" fill="#FFF8EE" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Built for a stable public landing page</text>
+    <rect x="62" y="520" width="128" height="42" rx="21" fill="#D97D47"/>
+    <text x="97" y="547" fill="#FFF8EE" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Bun</text>
+    <rect x="208" y="520" width="164" height="42" rx="21" fill="#295E72"/>
+    <text x="235" y="547" fill="#FFF8EE" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">TypeScript</text>
+    <rect x="390" y="520" width="122" height="42" rx="21" fill="#D97D47"/>
+    <text x="420" y="547" fill="#FFF8EE" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Docs</text>
+    <rect x="62" y="580" width="188" height="16" rx="8" fill="#F2D5AA"/>
+    <rect x="270" y="580" width="156" height="16" rx="8" fill="#2C5F75"/>
+    <rect x="446" y="580" width="66" height="16" rx="8" fill="#F2D5AA"/>
+  </g>
+</svg>

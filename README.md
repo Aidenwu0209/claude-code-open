@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="./docs/fusion-assets/landing-hero.png" alt="Claude Code Open Hero" width="860" />
+  <img src="./docs/fusion-assets/readme-hero.png" alt="Claude Code Open Hero" width="820" />
 </p>
 
 ## 项目定位
@@ -36,7 +36,7 @@
 ## 界面预览
 
 <p align="center">
-  <img src="./docs/fusion-assets/landing-preview.png" alt="Preview Wall" width="860" />
+  <img src="./docs/fusion-assets/readme-preview.png" alt="Preview Wall" width="820" />
 </p>
 
 完整运行截图保留在 [`docs/runtime-snapshots/`](./docs/runtime-snapshots/) 目录里，README 首页只展示统一风格的预览板，避免 GitHub 上出现比例和视觉重量不一致的问题。`docs/fusion-assets/` 同时保留了 PNG 展示图和 SVG 源文件。
@@ -44,7 +44,7 @@
 ## 架构与能力
 
 <p align="center">
-  <img src="./docs/fusion-assets/landing-stack.png" alt="Feature Map" width="860" />
+  <img src="./docs/fusion-assets/readme-stack.png" alt="Feature Map" width="820" />
 </p>
 
 这套仓库现在更接近“可继续维护的工程版 + 好上手的本地版”组合：
@@ -155,7 +155,7 @@ preload.ts              # 本地启动预加载
 ## 路线图
 
 <p align="center">
-  <img src="./docs/fusion-assets/landing-path.png" alt="Roadmap" width="860" />
+  <img src="./docs/fusion-assets/readme-path.png" alt="Roadmap" width="820" />
 </p>
 
 后续更适合继续推进这些方向：
