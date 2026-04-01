@@ -35,10 +35,10 @@ This repository combines the strengths of a runnable local setup and a larger en
 ## Preview
 
 <p align="center">
-  <img src="./docs/runtime-snapshots/00runtime.png" alt="Runtime Preview" width="31%" />
-  <img src="./docs/runtime-snapshots/05-terminal-ui.png" alt="Terminal UI" width="31%" />
-  <img src="./docs/runtime-snapshots/04-multi-agent.png" alt="Multi Agent" width="31%" />
+  <img src="./docs/fusion-assets/preview-wall.svg" alt="Preview Wall" width="980" />
 </p>
+
+Full-size reference screenshots are still available in [`docs/runtime-snapshots/`](./docs/runtime-snapshots/), but the README now uses a single consistent preview board for cleaner GitHub rendering.
 
 ## Quick Start
 

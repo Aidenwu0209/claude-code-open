@@ -1,52 +1,57 @@
-<svg width="1400" height="920" viewBox="0 0 1400 920" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1400" height="920" rx="32" fill="#FBF5EA"/>
-  <text x="90" y="100" fill="#112532" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800">Fusion Map</text>
-  <text x="90" y="145" fill="#355061" font-family="Arial, Helvetica, sans-serif" font-size="24">Merged repository layout after combining both codebases</text>
+<svg width="1440" height="980" viewBox="0 0 1440 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1440" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8EE"/>
+      <stop offset="1" stop-color="#F1E2CC"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1E4F66"/>
+      <stop offset="1" stop-color="#102733"/>
+    </linearGradient>
+  </defs>
 
-  <rect x="90" y="210" width="360" height="560" rx="28" fill="#FFF7E8" stroke="#E6C38E" stroke-width="3"/>
-  <rect x="520" y="180" width="360" height="620" rx="28" fill="#183648"/>
-  <rect x="950" y="210" width="360" height="560" rx="28" fill="#FFF7E8" stroke="#DCA56A" stroke-width="3"/>
+  <rect width="1440" height="980" rx="34" fill="url(#page)"/>
+  <text x="92" y="104" fill="#122A38" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800">Open Stack</text>
+  <text x="92" y="148" fill="#4D6675" font-family="Arial, Helvetica, sans-serif" font-size="24">How the repository is organized after the merge and cleanup work.</text>
 
-  <text x="122" y="272" fill="#173142" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">local runtime layer</text>
-  <text x="122" y="310" fill="#4C6676" font-family="Arial, Helvetica, sans-serif" font-size="22">startup and recovery additions</text>
+  <rect x="92" y="210" width="1256" height="160" rx="28" fill="url(#accent)"/>
+  <text x="132" y="274" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">1. Entry + Session Layer</text>
+  <text x="132" y="322" fill="#F1D8AF" font-family="Arial, Helvetica, sans-serif" font-size="23">`bun run dev`, `bun run start`, `./bin/claude-local`, recovery mode, print mode</text>
+  <rect x="1068" y="250" width="220" height="80" rx="22" fill="#D97D47"/>
+  <text x="1114" y="300" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">CLI / TUI</text>
 
-  <text x="564" y="258" fill="#FFF8EC" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">fusion repo</text>
-  <text x="564" y="296" fill="#F3D7AF" font-family="Arial, Helvetica, sans-serif" font-size="22">what ships together now</text>
+  <rect x="92" y="406" width="606" height="220" rx="28" fill="#FFFDF8" stroke="#D8B789" stroke-width="3"/>
+  <text x="132" y="470" fill="#122A38" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">2. Tool + Permission Layer</text>
+  <text x="132" y="520" fill="#4D6675" font-family="Arial, Helvetica, sans-serif" font-size="22">file tools, shell tools, web tools, agent tools,</text>
+  <text x="132" y="554" fill="#4D6675" font-family="Arial, Helvetica, sans-serif" font-size="22">permission gates, sandbox flow, and render loop</text>
+  <rect x="132" y="580" width="152" height="32" rx="16" fill="#E9F1F2"/>
+  <text x="165" y="602" fill="#1C4E64" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">TOOLS</text>
+  <rect x="300" y="580" width="182" height="32" rx="16" fill="#F7E4CF"/>
+  <text x="334" y="602" fill="#A3521E" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">PERMISSIONS</text>
+  <rect x="498" y="580" width="144" height="32" rx="16" fill="#E9F1F2"/>
+  <text x="532" y="602" fill="#1C4E64" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">SANDBOX</text>
 
-  <text x="984" y="272" fill="#173142" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">core workspace layer</text>
-  <text x="984" y="310" fill="#4C6676" font-family="Arial, Helvetica, sans-serif" font-size="22">engineering and documentation surface</text>
+  <rect x="742" y="406" width="606" height="220" rx="28" fill="#FFFDF8" stroke="#D8B789" stroke-width="3"/>
+  <text x="782" y="470" fill="#122A38" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">3. Integration Layer</text>
+  <text x="782" y="520" fill="#4D6675" font-family="Arial, Helvetica, sans-serif" font-size="22">MCP, plugins, skills, OAuth, analytics, bridge,</text>
+  <text x="782" y="554" fill="#4D6675" font-family="Arial, Helvetica, sans-serif" font-size="22">remote sessions, and provider integrations</text>
+  <rect x="782" y="580" width="134" height="32" rx="16" fill="#E9F1F2"/>
+  <text x="819" y="602" fill="#1C4E64" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">MCP</text>
+  <rect x="932" y="580" width="146" height="32" rx="16" fill="#F7E4CF"/>
+  <text x="963" y="602" fill="#A3521E" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">PLUGINS</text>
+  <rect x="1094" y="580" width="130" height="32" rx="16" fill="#E9F1F2"/>
+  <text x="1127" y="602" fill="#1C4E64" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">SKILLS</text>
 
-  <g font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#173142">
-    <text x="122" y="380">• bin launcher</text>
-    <text x="122" y="430">• local recovery CLI</text>
-    <text x="122" y="480">• preload defaults</text>
-    <text x="122" y="530">• env template</text>
-    <text x="122" y="580">• runtime screenshots</text>
+  <rect x="92" y="662" width="1256" height="206" rx="28" fill="#132A38"/>
+  <text x="132" y="726" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">4. Public-facing Layer</text>
+  <text x="132" y="774" fill="#F1D8AF" font-family="Arial, Helvetica, sans-serif" font-size="23">README, preview assets, docs pages, runtime references, and a repository layout that is easier to publish.</text>
 
-    <text x="984" y="380">• broader src tree</text>
-    <text x="984" y="430">• packages workspace</text>
-    <text x="984" y="480">• scripts and build</text>
-    <text x="984" y="530">• docs site structure</text>
-    <text x="984" y="580">• capability coverage</text>
-  </g>
-
-  <g font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#FFF8EC">
-    <text x="564" y="390">• one unified package.json</text>
-    <text x="564" y="446">• recovery-mode startup path</text>
-    <text x="564" y="502">• safer modifier handling</text>
-    <text x="564" y="558">• refreshed README visuals</text>
-    <text x="564" y="614">• merged docs and screenshots</text>
-    <text x="564" y="670">• upload-ready Git repository</text>
-  </g>
-
-  <path d="M450 490H520" stroke="#C97A2E" stroke-width="8" stroke-linecap="round"/>
-  <path d="M880 490H950" stroke="#C97A2E" stroke-width="8" stroke-linecap="round"/>
-
-  <circle cx="485" cy="490" r="12" fill="#C97A2E"/>
-  <circle cx="915" cy="490" r="12" fill="#C97A2E"/>
-
-  <rect x="90" y="808" width="1220" height="60" rx="18" fill="#102430"/>
-  <text x="130" y="847" fill="#FFF5E7" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
-    The merged repo keeps the larger code surface while preserving the simpler local startup path.
-  </text>
+  <rect x="132" y="806" width="186" height="34" rx="17" fill="#D97D47"/>
+  <text x="183" y="829" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">README</text>
+  <rect x="336" y="806" width="222" height="34" rx="17" fill="#295E72"/>
+  <text x="401" y="829" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">SVG ASSETS</text>
+  <rect x="576" y="806" width="180" height="34" rx="17" fill="#D97D47"/>
+  <text x="625" y="829" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">DOCS</text>
+  <rect x="774" y="806" width="266" height="34" rx="17" fill="#295E72"/>
+  <text x="844" y="829" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">RUNTIME REFERENCES</text>
 </svg>

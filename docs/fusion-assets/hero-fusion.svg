@@ -1,60 +1,86 @@
-<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1600" height="960" viewBox="0 0 1600 960" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="120" y1="80" x2="1460" y2="820" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F5E6C8"/>
-      <stop offset="0.5" stop-color="#F2B56B"/>
-      <stop offset="1" stop-color="#1F4A63"/>
+    <linearGradient id="bg" x1="120" y1="60" x2="1460" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6EA"/>
+      <stop offset="0.52" stop-color="#F4D4AF"/>
+      <stop offset="1" stop-color="#1F4B63"/>
     </linearGradient>
-    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#FFF8EC" stop-opacity="0.95"/>
-      <stop offset="1" stop-color="#FFE1B4" stop-opacity="0.86"/>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFDF9"/>
+      <stop offset="1" stop-color="#F3E1C7"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1C394B"/>
+      <stop offset="1" stop-color="#102633"/>
     </linearGradient>
   </defs>
 
-  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
-  <circle cx="1290" cy="160" r="160" fill="#FFF7E8" fill-opacity="0.18"/>
-  <circle cx="1410" cy="740" r="220" fill="#0C2432" fill-opacity="0.16"/>
-  <circle cx="230" cy="760" r="210" fill="#FFF7E8" fill-opacity="0.12"/>
+  <rect width="1600" height="960" rx="36" fill="url(#bg)"/>
+  <circle cx="1338" cy="174" r="170" fill="#FFF8EE" fill-opacity="0.32"/>
+  <circle cx="1400" cy="810" r="250" fill="#113142" fill-opacity="0.14"/>
+  <circle cx="254" cy="808" r="240" fill="#FFF8EE" fill-opacity="0.18"/>
 
-  <rect x="88" y="92" width="480" height="52" rx="26" fill="#13232E" fill-opacity="0.82"/>
-  <text x="124" y="126" fill="#FFF9F1" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Merged engineering base + local runtime path</text>
+  <g opacity="0.18" stroke="#22495C">
+    <path d="M72 180H720"/>
+    <path d="M72 236H720"/>
+    <path d="M72 292H720"/>
+    <path d="M72 348H720"/>
+  </g>
 
-  <text x="92" y="260" fill="#102430" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="800">Claude Code</text>
-  <text x="92" y="352" fill="#102430" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="800">Fusion</text>
-  <text x="95" y="430" fill="#17384B" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="500">
-    One repository that combines the broader engineering tree
-  </text>
-  <text x="95" y="472" fill="#17384B" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="500">
-    with the simpler local launcher and recovery workflow.
-  </text>
+  <rect x="88" y="84" width="332" height="56" rx="28" fill="#132B39"/>
+  <text x="122" y="120" fill="#FFF9F0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Local-first workspace for Claude Code</text>
 
-  <rect x="870" y="170" width="280" height="174" rx="28" fill="url(#card)"/>
-  <rect x="1168" y="170" width="280" height="174" rx="28" fill="url(#card)"/>
-  <rect x="1018" y="382" width="280" height="174" rx="28" fill="url(#card)"/>
+  <text x="88" y="274" fill="#122B39" font-family="Arial, Helvetica, sans-serif" font-size="102" font-weight="800">Claude</text>
+  <text x="88" y="368" fill="#122B39" font-family="Arial, Helvetica, sans-serif" font-size="102" font-weight="800">Code Open</text>
 
-  <rect x="904" y="206" width="64" height="64" rx="18" fill="#1D4D67"/>
-  <text x="991" y="230" fill="#142A38" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">Base</text>
-  <text x="991" y="268" fill="#284252" font-family="Arial, Helvetica, sans-serif" font-size="22">full src tree</text>
-  <text x="991" y="301" fill="#284252" font-family="Arial, Helvetica, sans-serif" font-size="22">packages + docs</text>
+  <text x="92" y="458" fill="#214255" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="500">Full engineering workspace, local launcher, recovery mode,</text>
+  <text x="92" y="504" fill="#214255" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="500">docs assets, runtime previews, and a GitHub-ready landing page.</text>
 
-  <rect x="1202" y="206" width="64" height="64" rx="18" fill="#C86A28"/>
-  <text x="1289" y="230" fill="#142A38" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">Run</text>
-  <text x="1289" y="268" fill="#284252" font-family="Arial, Helvetica, sans-serif" font-size="22">launcher</text>
-  <text x="1289" y="301" fill="#284252" font-family="Arial, Helvetica, sans-serif" font-size="22">recovery CLI</text>
+  <rect x="88" y="618" width="580" height="186" rx="28" fill="#102633" fill-opacity="0.85"/>
+  <text x="128" y="684" fill="#FFF7ED" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">What this repository focuses on</text>
+  <text x="128" y="732" fill="#F2D7AD" font-family="Arial, Helvetica, sans-serif" font-size="22">• Bun + TypeScript workspace</text>
+  <text x="128" y="768" fill="#F2D7AD" font-family="Arial, Helvetica, sans-serif" font-size="22">• CLI / TUI / recovery startup paths</text>
+  <text x="128" y="804" fill="#F2D7AD" font-family="Arial, Helvetica, sans-serif" font-size="22">• MCP, plugins, skills, permissions, and docs</text>
 
-  <rect x="1052" y="418" width="64" height="64" rx="18" fill="#0F2633"/>
-  <text x="1139" y="442" fill="#142A38" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800">Docs</text>
-  <text x="1139" y="480" fill="#284252" font-family="Arial, Helvetica, sans-serif" font-size="22">new visuals</text>
-  <text x="1139" y="513" fill="#284252" font-family="Arial, Helvetica, sans-serif" font-size="22">merged screenshots</text>
+  <g transform="translate(880 126)">
+    <rect width="604" height="708" rx="32" fill="#0F2633" fill-opacity="0.18"/>
 
-  <path d="M1070 344C1070 370 1120 380 1158 394" stroke="#FFF4E0" stroke-width="8" stroke-linecap="round"/>
-  <path d="M1274 344C1274 370 1230 380 1190 394" stroke="#FFF4E0" stroke-width="8" stroke-linecap="round"/>
+    <rect x="36" y="36" width="532" height="174" rx="26" fill="url(#panel)"/>
+    <rect x="66" y="66" width="90" height="90" rx="24" fill="#1D546A"/>
+    <rect x="82" y="84" width="58" height="12" rx="6" fill="#E7F1F3"/>
+    <rect x="82" y="106" width="58" height="12" rx="6" fill="#E7F1F3"/>
+    <rect x="82" y="128" width="42" height="12" rx="6" fill="#E7F1F3"/>
+    <text x="188" y="95" fill="#143042" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">CLI + TUI</text>
+    <text x="188" y="134" fill="#45606F" font-family="Arial, Helvetica, sans-serif" font-size="22">interactive coding workflows</text>
+    <text x="188" y="168" fill="#45606F" font-family="Arial, Helvetica, sans-serif" font-size="22">print mode, tools, and sessions</text>
 
-  <rect x="90" y="676" width="1320" height="132" rx="28" fill="#102430" fill-opacity="0.78"/>
-  <text x="128" y="734" fill="#FFF8EE" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">
-    Engineering backbone • Recovery launcher • Refreshed visuals
-  </text>
-  <text x="128" y="779" fill="#F4DAB0" font-family="Arial, Helvetica, sans-serif" font-size="24">
-    Built as a practical combined repo instead of a docs-only wrapper.
-  </text>
+    <rect x="36" y="246" width="252" height="194" rx="26" fill="url(#panel)"/>
+    <rect x="316" y="246" width="252" height="194" rx="26" fill="url(#panel)"/>
+
+    <rect x="64" y="278" width="70" height="70" rx="20" fill="#D97D47"/>
+    <path d="M84 315H114" stroke="#FFF8EF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M99 300V330" stroke="#FFF8EF" stroke-width="8" stroke-linecap="round"/>
+    <text x="154" y="304" fill="#143042" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">Recovery</text>
+    <text x="154" y="340" fill="#45606F" font-family="Arial, Helvetica, sans-serif" font-size="20">fallback entrypoint</text>
+    <text x="154" y="370" fill="#45606F" font-family="Arial, Helvetica, sans-serif" font-size="20">for local debugging</text>
+
+    <rect x="344" y="278" width="70" height="70" rx="20" fill="#173A4A"/>
+    <rect x="360" y="296" width="38" height="10" rx="5" fill="#FFF8EF"/>
+    <rect x="360" y="316" width="54" height="10" rx="5" fill="#FFF8EF"/>
+    <rect x="360" y="336" width="46" height="10" rx="5" fill="#FFF8EF"/>
+    <text x="434" y="304" fill="#143042" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">Docs</text>
+    <text x="434" y="340" fill="#45606F" font-family="Arial, Helvetica, sans-serif" font-size="20">architecture notes</text>
+    <text x="434" y="370" fill="#45606F" font-family="Arial, Helvetica, sans-serif" font-size="20">and public-facing assets</text>
+
+    <rect x="36" y="476" width="532" height="196" rx="26" fill="url(#dark)"/>
+    <text x="72" y="536" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Built to keep moving</text>
+    <text x="72" y="584" fill="#F1D1A4" font-family="Arial, Helvetica, sans-serif" font-size="22">• launch locally</text>
+    <text x="72" y="620" fill="#F1D1A4" font-family="Arial, Helvetica, sans-serif" font-size="22">• inspect the codebase</text>
+    <text x="72" y="656" fill="#F1D1A4" font-family="Arial, Helvetica, sans-serif" font-size="22">• extend tools, commands, plugins, and docs</text>
+
+    <rect x="386" y="538" width="126" height="44" rx="22" fill="#D97D47"/>
+    <text x="420" y="567" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Bun</text>
+    <rect x="386" y="598" width="126" height="44" rx="22" fill="#295E72"/>
+    <text x="405" y="627" fill="#FFF8EF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">TypeScript</text>
+  </g>
 </svg>

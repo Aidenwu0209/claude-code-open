@@ -36,16 +36,10 @@
 ## 界面预览
 
 <p align="center">
-  <img src="./docs/runtime-snapshots/00runtime.png" alt="Runtime Preview" width="31%" />
-  <img src="./docs/runtime-snapshots/05-terminal-ui.png" alt="Terminal UI" width="31%" />
-  <img src="./docs/runtime-snapshots/04-multi-agent.png" alt="Multi Agent" width="31%" />
+  <img src="./docs/fusion-assets/preview-wall.svg" alt="Preview Wall" width="980" />
 </p>
 
-<p align="center">
-  <img src="./docs/runtime-snapshots/06-permission-security.png" alt="Permission Security" width="31%" />
-  <img src="./docs/runtime-snapshots/03-tool-system.png" alt="Tool System" width="31%" />
-  <img src="./docs/runtime-snapshots/07-services-layer.png" alt="Services Layer" width="31%" />
-</p>
+完整运行截图保留在 [`docs/runtime-snapshots/`](./docs/runtime-snapshots/) 目录里，README 首页只展示统一风格的预览板，避免 GitHub 上出现比例和视觉重量不一致的问题。
 
 ## 架构与能力
 
