@@ -1,0 +1,52 @@
+<svg width="1400" height="920" viewBox="0 0 1400 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="920" rx="32" fill="#FBF5EA"/>
+  <text x="90" y="100" fill="#112532" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800">Fusion Map</text>
+  <text x="90" y="145" fill="#355061" font-family="Arial, Helvetica, sans-serif" font-size="24">Merged repository layout after combining both codebases</text>
+
+  <rect x="90" y="210" width="360" height="560" rx="28" fill="#FFF7E8" stroke="#E6C38E" stroke-width="3"/>
+  <rect x="520" y="180" width="360" height="620" rx="28" fill="#183648"/>
+  <rect x="950" y="210" width="360" height="560" rx="28" fill="#FFF7E8" stroke="#DCA56A" stroke-width="3"/>
+
+  <text x="122" y="272" fill="#173142" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">local runtime layer</text>
+  <text x="122" y="310" fill="#4C6676" font-family="Arial, Helvetica, sans-serif" font-size="22">startup and recovery additions</text>
+
+  <text x="564" y="258" fill="#FFF8EC" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">fusion repo</text>
+  <text x="564" y="296" fill="#F3D7AF" font-family="Arial, Helvetica, sans-serif" font-size="22">what ships together now</text>
+
+  <text x="984" y="272" fill="#173142" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">core workspace layer</text>
+  <text x="984" y="310" fill="#4C6676" font-family="Arial, Helvetica, sans-serif" font-size="22">engineering and documentation surface</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#173142">
+    <text x="122" y="380">• bin launcher</text>
+    <text x="122" y="430">• local recovery CLI</text>
+    <text x="122" y="480">• preload defaults</text>
+    <text x="122" y="530">• env template</text>
+    <text x="122" y="580">• runtime screenshots</text>
+
+    <text x="984" y="380">• broader src tree</text>
+    <text x="984" y="430">• packages workspace</text>
+    <text x="984" y="480">• scripts and build</text>
+    <text x="984" y="530">• docs site structure</text>
+    <text x="984" y="580">• capability coverage</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#FFF8EC">
+    <text x="564" y="390">• one unified package.json</text>
+    <text x="564" y="446">• recovery-mode startup path</text>
+    <text x="564" y="502">• safer modifier handling</text>
+    <text x="564" y="558">• refreshed README visuals</text>
+    <text x="564" y="614">• merged docs and screenshots</text>
+    <text x="564" y="670">• upload-ready Git repository</text>
+  </g>
+
+  <path d="M450 490H520" stroke="#C97A2E" stroke-width="8" stroke-linecap="round"/>
+  <path d="M880 490H950" stroke="#C97A2E" stroke-width="8" stroke-linecap="round"/>
+
+  <circle cx="485" cy="490" r="12" fill="#C97A2E"/>
+  <circle cx="915" cy="490" r="12" fill="#C97A2E"/>
+
+  <rect x="90" y="808" width="1220" height="60" rx="18" fill="#102430"/>
+  <text x="130" y="847" fill="#FFF5E7" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
+    The merged repo keeps the larger code surface while preserving the simpler local startup path.
+  </text>
+</svg>
