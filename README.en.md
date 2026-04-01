@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="./docs/fusion-assets/hero-fusion.png" alt="Claude Code Open Hero" width="960" />
+  <img src="./docs/fusion-assets/landing-hero.png" alt="Claude Code Open Hero" width="860" />
 </p>
 
 ## Overview
@@ -35,7 +35,7 @@ This repository combines the strengths of a runnable local setup and a larger en
 ## Preview
 
 <p align="center">
-  <img src="./docs/fusion-assets/preview-wall.png" alt="Preview Wall" width="980" />
+  <img src="./docs/fusion-assets/landing-preview.png" alt="Preview Wall" width="860" />
 </p>
 
 Full-size reference screenshots are still available in [`docs/runtime-snapshots/`](./docs/runtime-snapshots/), and `docs/fusion-assets/` keeps both PNG display assets and SVG source files.
@@ -90,7 +90,7 @@ CLAUDE_CODE_FORCE_RECOVERY_CLI=1 ./bin/claude-local
 ```text
 bin/                    # local launcher
 docs/                   # docs, diagrams, assets
-docs/fusion-assets/     # landing SVG artwork
+docs/fusion-assets/     # landing images and SVG sources
 docs/runtime-snapshots/ # runtime screenshots
 packages/               # workspace packages
 scripts/                # build and maintenance scripts
