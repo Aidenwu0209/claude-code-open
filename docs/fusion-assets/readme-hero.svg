@@ -52,9 +52,9 @@
   <rect x="642" y="752" width="134" height="18" rx="9" fill="#D97D47"/>
 
   <g transform="translate(920 116)">
-    <rect width="572" height="676" rx="34" fill="#173549" fill-opacity="0.18"/>
+    <rect width="612" height="676" rx="34" fill="#173549" fill-opacity="0.18"/>
 
-    <rect x="28" y="30" width="516" height="146" rx="28" fill="url(#card)"/>
+    <rect x="28" y="30" width="556" height="146" rx="28" fill="url(#card)"/>
     <rect x="60" y="58" width="86" height="86" rx="24" fill="#1F566D"/>
     <rect x="82" y="82" width="42" height="12" rx="6" fill="#FFF8EE"/>
     <rect x="82" y="104" width="42" height="12" rx="6" fill="#FFF8EE"/>
@@ -62,8 +62,8 @@
     <text x="182" y="90" fill="#143042" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">CLI + TUI</text>
     <text x="182" y="132" fill="#4B6675" font-family="Arial, Helvetica, sans-serif" font-size="24">interactive sessions</text>
 
-    <rect x="28" y="208" width="244" height="172" rx="26" fill="url(#card)"/>
-    <rect x="300" y="208" width="244" height="172" rx="26" fill="url(#card)"/>
+    <rect x="28" y="208" width="270" height="172" rx="26" fill="url(#card)"/>
+    <rect x="314" y="208" width="270" height="172" rx="26" fill="url(#card)"/>
 
     <rect x="60" y="244" width="64" height="64" rx="18" fill="#295E72"/>
     <path d="M80 276H104" stroke="#FFF8EE" stroke-width="8" stroke-linecap="round"/>
@@ -71,13 +71,13 @@
     <text x="148" y="274" fill="#143042" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">Launcher</text>
     <text x="148" y="316" fill="#4B6675" font-family="Arial, Helvetica, sans-serif" font-size="22">local entry</text>
 
-    <rect x="332" y="244" width="64" height="64" rx="18" fill="#D97D47"/>
-    <path d="M352 276H376" stroke="#FFF8EE" stroke-width="8" stroke-linecap="round"/>
-    <path d="M364 264V288" stroke="#FFF8EE" stroke-width="8" stroke-linecap="round"/>
-    <text x="420" y="274" fill="#143042" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">Recovery</text>
-    <text x="420" y="316" fill="#4B6675" font-family="Arial, Helvetica, sans-serif" font-size="22">safe fallback</text>
+    <rect x="346" y="244" width="64" height="64" rx="18" fill="#D97D47"/>
+    <path d="M366 276H390" stroke="#FFF8EE" stroke-width="8" stroke-linecap="round"/>
+    <path d="M378 264V288" stroke="#FFF8EE" stroke-width="8" stroke-linecap="round"/>
+    <text x="434" y="274" fill="#143042" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">Recovery</text>
+    <text x="434" y="316" fill="#4B6675" font-family="Arial, Helvetica, sans-serif" font-size="22">safe fallback</text>
 
-    <rect x="28" y="414" width="516" height="194" rx="28" fill="url(#panel)"/>
+    <rect x="28" y="414" width="556" height="194" rx="28" fill="url(#panel)"/>
     <text x="62" y="476" fill="#FFF8EE" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Built for a stable public landing page</text>
     <rect x="62" y="520" width="128" height="42" rx="21" fill="#D97D47"/>
     <text x="97" y="547" fill="#FFF8EE" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Bun</text>
