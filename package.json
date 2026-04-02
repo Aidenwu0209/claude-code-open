@@ -4,6 +4,15 @@
   "description": "Unified Claude Code workspace with an optional local launcher",
   "type": "module",
   "private": true,
+  "author": "Aidenwu0209",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aidenwu0209/claude-code-open.git"
+  },
+  "homepage": "https://github.com/Aidenwu0209/claude-code-open#readme",
+  "bugs": {
+    "url": "https://github.com/Aidenwu0209/claude-code-open/issues"
+  },
   "keywords": [
     "claude",
     "anthropic",
