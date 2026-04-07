@@ -16,14 +16,14 @@
 
 ## 项目定位
 
-这个仓库不是只做一个能启动的壳子，也不是只保留文档站结构，而是把两种路线的优点整合到了一起：
+这个仓库把“可直接本地运行的入口”和“完整工程结构”放在了一起：
 
-- 保留完整的 `src/`、`packages/`、`scripts/`、`docs/` 工程布局
-- 保留面向本地使用的启动入口、恢复模式和环境模板
+- 保留 `src/`、`packages/`、`scripts/`、`docs/` 等完整目录
+- 保留本地启动脚本、恢复模式和环境模板
 - 保留终端交互、命令系统、工具系统、MCP、插件与 Skills 能力
-- 重做仓库门面图片与首页编排，让 GitHub 首页更适合直接公开展示
+- 保留架构文档、截图和仓库门面资源，便于继续维护公开页面
 
-## 你可以得到什么
+## 主要能力
 
 - 完整 CLI / Ink TUI 交互界面
 - `--print` 非交互输出模式
@@ -31,7 +31,6 @@
 - Recovery CLI 降级模式
 - 自定义 API 端点与模型配置
 - MCP / 插件 / Skills / 命令系统
-- 文档目录、架构图、运行截图和工程脚本
 
 ## 界面预览
 
@@ -39,20 +38,7 @@
   <img src="./docs/fusion-assets/readme-preview.png" alt="Preview Wall" width="100%" />
 </p>
 
-完整运行截图保留在 [`docs/runtime-snapshots/`](./docs/runtime-snapshots/) 目录里，README 首页只展示统一风格的预览板，避免 GitHub 上出现比例和视觉重量不一致的问题。`docs/fusion-assets/` 同时保留了 PNG 展示图和 SVG 源文件。
-
-## 架构与能力
-
-<p align="center">
-  <img src="./docs/fusion-assets/readme-stack.png" alt="Feature Map" width="100%" />
-</p>
-
-这套仓库现在更接近“可继续维护的工程版 + 好上手的本地版”组合：
-
-- 默认主链路走 `bun run dev` / `bun run start`
-- 本地附加入口走 `./bin/claude-local`
-- 出现启动或界面问题时，可直接切换到 Recovery CLI
-- 文档与截图资源保留在仓库内，便于后续继续整理公开页面
+完整运行截图保留在 [`docs/runtime-snapshots/`](./docs/runtime-snapshots/) 目录中，`docs/fusion-assets/` 同时保留 README 展示图和 SVG 源文件。
 
 ## 快速开始
 
@@ -75,20 +61,39 @@ bun install
 cp .env.example .env
 ```
 
-常用变量：
+推荐本地配置：
 
 ```env
-ANTHROPIC_API_KEY=sk-xxx
-ANTHROPIC_BASE_URL=https://api.anthropic.com
-ANTHROPIC_MODEL=claude-sonnet-4-5
-ANTHROPIC_DEFAULT_SONNET_MODEL=claude-sonnet-4-5
-ANTHROPIC_DEFAULT_HAIKU_MODEL=claude-3-5-haiku-latest
-API_TIMEOUT_MS=600000
-DISABLE_TELEMETRY=1
+ANTHROPIC_BASE_URL=https://api.example.com/anthropic
+ANTHROPIC_API_KEY=sk-your-api-key
+ANTHROPIC_AUTH_TOKEN=
+ANTHROPIC_MODEL=your-default-model
+ANTHROPIC_DEFAULT_SONNET_MODEL=your-default-model
+ANTHROPIC_DEFAULT_HAIKU_MODEL=your-default-model
+API_TIMEOUT_MS=3000000
 CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
+DISABLE_TELEMETRY=1
 ```
 
-### 4. 启动
+## API 与隐私
+
+当前仓库在 API 和隐私处理上，默认做法基本是安全的：
+
+- API 凭证通过环境变量读取，例如 `ANTHROPIC_API_KEY` 和 `ANTHROPIC_AUTH_TOKEN`，没有写死在源码里。
+- `.env` 已经被 `.gitignore` 忽略，本地密钥不会被设计成直接提交到仓库。
+- `.env.example` 默认包含 `DISABLE_TELEMETRY=1` 和 `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1`。
+- 第三方 telemetry 不是默认开启，只有显式设置 `CLAUDE_CODE_ENABLE_TELEMETRY=1` 才会启用。
+- `src/utils/privacyLevel.ts` 负责隐私级别判断，会限制 telemetry 和非必要流量。
+- `src/utils/auth.ts` 与 `src/localRecoveryCli.ts` 会从环境变量读取凭证，并在缺失时直接报错，而不是静默降级。
+
+建议保持下面这些做法：
+
+- 真实密钥只放在本地 `.env`
+- 不要提交 `.env`、日志、截图或包含 token 的终端输出
+- 除非你明确需要，否则保留 `DISABLE_TELEMETRY=1` 和 `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1`
+- 需要接入代理或兼容服务时，优先改 `ANTHROPIC_BASE_URL`，不要改源码
+
+## 使用方式
 
 完整 TUI：
 
@@ -151,16 +156,3 @@ preload.ts              # 本地启动预加载
 - [docs/conversation/the-loop.mdx](./docs/conversation/the-loop.mdx)
 - [docs/tools/what-are-tools.mdx](./docs/tools/what-are-tools.mdx)
 - [docs/safety/permission-model.mdx](./docs/safety/permission-model.mdx)
-
-## 路线图
-
-<p align="center">
-  <img src="./docs/fusion-assets/readme-path.png" alt="Roadmap" width="100%" />
-</p>
-
-后续更适合继续推进这些方向：
-
-- 继续清理公开仓库门面与说明文案
-- 继续吸收稳定性修复并补更多验证
-- 继续整理 docs 站点内容与结构
-- 继续优化本地启动、恢复模式与跨平台体验
